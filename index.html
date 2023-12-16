@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易 HTML 作品</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 18px; /* 將整體文字大小增大 */
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #3498db;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        article {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            animation: fadeIn 1s ease; /* 添加 fadeIn 動畫效果 */
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 1.8em; /* 將標題文字大小增大 */
+            transition: color 0.3s ease, transform 0.3s ease; /* 添加過渡效果 */
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.2em; /* 將段落文字大小增大 */
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #e74c3c;
+            transform: scale(1.05); /* 添加 hover 效果 */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* 新增興趣欄位樣式 */
+        .interests {
+            margin-top: 20px;
+            animation: fadeIn 1s ease; /* 添加 fadeIn 動畫效果 */
+        }
+
+        .interests h2 {
+            color: #3498db;
+            font-size: 1.8em;
+        }
+
+        .interests p {
+            line-height: 1.6;
+            font-size: 1.2em;
+        }
+
+        /* 新增照片樣式 */
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+
+        .photo {
+            flex: 0 1 30%; /* 設定每個照片欄位的寬度 */
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo:hover {
+            transform: scale(1.05); /* hover 效果 */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>我的第一個 HTML 作品</h1>
+    </header>
+
+    <article>
+        <p>歡迎來到我的網頁。這是一個簡單的 HTML 作品練習，整合了影片所學的小作品。</p>
+    </article>
+
+    <article>
+        <h2>關於我</h2>
+        <img src="DSC_1667.jpg">
+    </article>
+
+    <article>
+        <h2>學經歷</h2>
+        <p>猿創力程式學校--儲備講師</p>
+        <p>大學 : 中山大學人文暨科技誇領域學士學位學程<a href="https://pis.nsysu.edu.tw/" target="_blank">系所網站</a></p>
+        <p>高中 : 新北市立板橋高級中學<a href="https://www.pcsh.ntpc.edu.tw/" target="_blank">學校網站</a></p>
+
+        <!-- 新增照片欄位 -->
+        <div class="photos">
+            <div class="photo">
+                <img src="C:\Users\sean\Desktop\html practice\00\page__cover_image_1482125727.jpg" alt="Photo 1">
+            </div>
+            <div class="photo">
+                <img src="C:\Users\sean\Desktop\html practice\00\下載.jpg" alt="Photo 2">
+            </div>
+            <div class="photo">
+                <img src="C:\Users\sean\Desktop\html practice\00\下1載.jpg" alt="Photo 3">
+            </div>
+            <!-- 根據需要增加更多照片欄位 -->
+        </div>
+    </article>
+
+    <!-- 新增興趣欄位 -->
+    <div class="interests">
+        <h2>興趣</h2>
+        <p>我對於運動都相當有興趣，不管是排球、桌球、羽球、游泳或是跑步都是我喜歡的項目</p>
+        <p>程式設計也是我興趣之一，在解題和創作的過程都充滿驚喜</p>
+    </div>
+
+    <footer>
+        <p>聯絡我</p>
+        <a href="mailto:xiangan1114@gmail.com">我的Email</a>
+    </footer>
+
+</body>
+</html>
